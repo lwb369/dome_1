@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul>
+    <li>111</li>
+    <li>222</li>
+    <li class="dome">333</li>
+    <li>444</li>
+    <li>555</li>
+    <li>666</li>
+  </ul>
+  <script src="./jquery.js"></script>
+  <script>
+    $(function () {
+
+
+      // 1、jQuery对象.eq(索引值)  获取索引值对应的元素
+      // 2、jQuery对象.siblings()  获取所有的兄弟标签（不包括当前标签自己,除了自己之外的兄弟标签）
+      // 3、jQuery对象.next()      获取下一个兄弟标签
+      // 4、jQuery对象.nextAll()     获取当前标签后面的所有兄弟标签
+      // 5、jQuery对象.prev()      获取上一个兄弟标签
+      // 6、jQuery对象.prevAll()      获取当前标签前面的所有兄弟标签
+
+
+      // $('li').eq(3).css('color', 'red')
+      // $('.dome').siblings().css('color', 'red')
+      // $('.dome').next().css('color', 'red')
+      // $('.dome').nextAll().css('color', 'red')
+      // $('.dome').prev().css('color', 'red')
+      $('.dome').prevAll().css('color', 'pink')
+    })
+  </script>
+</body>
+
+</html>
